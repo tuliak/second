@@ -6,7 +6,6 @@ public class Main {
         human.setName("Andrew");
         human.setName("Max");
         human.setName("Lex");
-        human.setName("Miranda");
         System.out.println(human.getName());
         human.setAge(-12);
         System.out.println(human.getAge());
