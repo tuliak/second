@@ -2,9 +2,13 @@ package com.lesson;
 
 public class Human {
     private final int minAge = 0;
+
     private final int maxAge = 120;
+
     private final int minNameLength = 3;
+
     private String name;
+
     private int age;
 
     public String getName() {
