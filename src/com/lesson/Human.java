@@ -1,11 +1,11 @@
 package com.lesson;
 
 public class Human {
-    private final int minAge = 0;
+    public static final int MIN_AGE = 0;
 
-    private final int maxAge = 120;
+    private static final int MAX_AGE = 120;
 
-    private final int minNameLength = 3;
+    private static final int MIN_NAME_LENGTH = 3;
 
     private String name;
 
@@ -15,13 +15,13 @@ public class Human {
         return name;
     }
     public String setName(String newName) {
-        if (newName != null && newName.length() > minNameLength){
+        if (newName != null && newName.length() > MIN_NAME_LENGTH){
         name = newName;
         }
         return name;
     }
     public int setAge(int newAge) {
-        if (newAge > minAge && newAge > 0 && newAge < maxAge) {
+        if (newAge > MIN_AGE && newAge > 0 && newAge < MAX_AGE) {
         age = newAge;
         } else {
             System.out.println("Ошибка! Проверьте корректность ввода возраста");
